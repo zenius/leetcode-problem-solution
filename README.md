@@ -8,3 +8,7 @@ Problem Link: https://www.leetcode.com/problems/two-sum <br>
 ## First Missing Positive
 Problem Link: https://www.leetcode.com/problems/first-missing-positive <br>
 <a href="https://github.com/zenius/leetcode-problem-solution/blob/master/first-missing-positive">Solution</a>
+
+## Median of Two Sorted Arrays
+Problem Link: https://www.leetcode.com/problems/median-of-two-sorted-arrays <br>
+<a href="https://github.com/zenius/leetcode-problem-solution/blob/master/median-of-two-sorted-arrays">Solution</a>
