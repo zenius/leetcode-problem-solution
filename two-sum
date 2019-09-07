@@ -1,0 +1,36 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+
+const sortArray = function(array) {
+    return [...array].sort((a,b) => a - b);
+};
+
+const twoSum = function(nums, target) {
+    const sortedNums = sortArray(nums);
+    
+    let start = 0; 
+    let end = sortedNums.length - 1; 
+    
+    while(start < end) {
+        let sum = sortedNums[start] + sortedNums[end]; 
+        if(sum === target) {
+            let firstIndex = nums.indexOf(sortedNums[start]);
+            let secondIndex; 
+            
+            if(sortedNums[start] === sortedNums[end]) {
+                secondIndex = nums.indexOf(sortedNums[end], firstIndex + 1); 
+            } else { 
+                secondIndex = nums.indexOf(sortedNums[end]);
+            }
+            
+            return [firstIndex, secondIndex];
+        } else if(sum > target) {
+            end--; 
+        } else { 
+            start++; 
+        }
+    }
+};
