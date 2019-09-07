@@ -4,3 +4,7 @@ This repo will contain the solution to the problem in https://www.leetcode.com.
 ## Two Sum
 Problem Link: https://www.leetcode.com/problems/two-sum <br>
 <a href="https://github.com/zenius/leetcode-problem-solution/blob/master/two-sum">Solution</a>
+
+## First Missing Positive
+Problem Link: https://www.leetcode.com/problems/first-missing-positive <br>
+<a href="https://github.com/zenius/leetcode-problem-solution/blob/master/first-missing-positive">Solution</a>
