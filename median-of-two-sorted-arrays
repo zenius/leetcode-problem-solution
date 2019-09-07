@@ -1,0 +1,55 @@
+/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number}
+ */
+
+const merge = function(firstArray, secondArray) {
+    const firstArrayLength = firstArray.length; 
+    const secondArrayLength = secondArray.length;
+    
+    let array = []; 
+    let i = 0, j = 0; 
+    
+    while(i < firstArrayLength && j < secondArrayLength) { 
+        if(firstArray[i] >= secondArray[j]) { 
+            array.push(secondArray[j]); 
+            j++; 
+        } else { 
+            array.push(firstArray[i]); 
+            i++;
+        }
+    }
+    
+    while(i < firstArrayLength) { 
+        array.push(firstArray[i]);
+        i++;
+    }
+    
+    while(j < secondArrayLength) { 
+        array.push(secondArray[j]); 
+        j++;
+    }
+    
+    return array; 
+};
+
+const getMedian = function(array) {
+    const length = array.length; 
+    let position = Math.floor(length/2); 
+    
+    // if Odd
+    if(length % 2 !==0 ) { 
+        return array[position];
+    }
+    
+    return (array[position-1] + array[position])/2;
+}
+
+const findMedianSortedArrays = function(nums1, nums2) {
+    const mergedArray = merge(nums1, nums2); 
+    
+    const median = getMedian(mergedArray);
+    
+    return median;
+};
