@@ -1,0 +1,17 @@
+/**
+ * @param {string} s
+ * @return {number}
+ */
+const lengthOfLastWord = function(string) {
+  string = string.trim(); 
+
+  const length = string.length;   
+  let i = length - 1; 
+  let lastWordLength = 0;
+
+  while(string.charAt(i)!==' ' && i>=0){ 
+      lastWordLength++; 
+      i--; 
+  }
+  return lastWordLength;
+};
