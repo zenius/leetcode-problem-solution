@@ -1,0 +1,31 @@
+/**
+ * @param {number[]} height
+ * @return {number}
+ */
+
+const maxArea = function(heights) { 
+    const length = heights.length; 
+    let maximumArea = 0; 
+    let start = 0, end = length - 1; 
+    
+    while(start < end) { 
+        let minHeight = Math.min(heights[start], heights[end]); 
+        let width = (end - start);
+        let currentArea = minHeight * width;
+        
+        if(heights[start] > heights[end]) { 
+            end--; 
+        } else if(heights[start] === heights[end])  { 
+            start++; 
+            end--; 
+        } else {
+            start++;
+        }
+        
+        if(maximumArea < currentArea) { 
+            maximumArea = currentArea;
+        }
+    }
+
+    return maximumArea;
+};
