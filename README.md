@@ -20,3 +20,7 @@ Problem Link: https://www.leetcode.com/problems/container-with-most-water <br>
 ## Length of Last Word
 Problem Link: https://www.leetcode.com/problems/length-of-last-word <br>
 <a href="https://github.com/zenius/leetcode-problem-solution/blob/master/length-of-last-word">Solution</a>
+
+## Longest Substring Without Repeating Characters
+Problem Link: https://www.leetcode.com/problems/longest-substring-without-repeating-characters <br>
+<a href="https://github.com/zenius/leetcode-problem-solution/blob/master/longest-substring-without-repeating-characters">Solution</a>
