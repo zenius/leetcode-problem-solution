@@ -1,0 +1,36 @@
+/**
+ * @param {string} s
+ * @return {number}
+ */
+
+const lengthOfLongestSubstring = function(string) {
+    const length = string.length;
+
+    let result = '';
+    result += string.charAt(0); 
+
+    let longestStringLength = result.length; 
+
+    for(let i = 1; i < length; i++) { 
+       let nextCharacter = string.charAt(i); 
+ 
+        if(result.includes(nextCharacter)) { 
+            if(result.length > longestStringLength) { 
+              longestStringLength = result.length; 
+            }
+
+            let matchPosition = result.indexOf(nextCharacter); 
+
+            // remove the characters before matching character
+            // including matching character from the previous string
+            result = result.slice(matchPosition + 1) + nextCharacter;  
+
+       } else { 
+            result += nextCharacter;
+       }
+    } 
+
+    longestStringLength = longestStringLength > result.length ? longestStringLength: result.length; 
+    
+    return longestStringLength; 
+};
