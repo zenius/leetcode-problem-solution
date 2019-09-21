@@ -2,7 +2,7 @@
 This repo will contain the solution to the problem in https://www.leetcode.com.
 
 ## Two Sum
-<a href="https://www.leetcode.com/problems/two-sum">Problem</a> <br>
+Problem Link: https://www.leetcode.com/problems/two-sum <br>
 <a href="https://github.com/zenius/leetcode-problem-solution/blob/master/two-sum">Solution</a>
 
 ## First Missing Positive
@@ -26,5 +26,5 @@ Problem Link: https://www.leetcode.com/problems/longest-substring-without-repeat
 <a href="https://github.com/zenius/leetcode-problem-solution/blob/master/longest-substring-without-repeating-characters">Solution</a>
 
 ## String to Integer (atoi)
-<a href="https://www.leetcode.com/problems/string-to-integer-atoi">Problem</a> <br>
+Problem Link: https://www.leetcode.com/problems/string-to-integer-atoi <br>
 <a href="https://github.com/zenius/leetcode-problem-solution/blob/master/string-to-integer-atoi">Solution</a>
