@@ -28,3 +28,8 @@ Problem Link: https://www.leetcode.com/problems/longest-substring-without-repeat
 ## String to Integer (atoi)
 Problem Link: https://www.leetcode.com/problems/string-to-integer-atoi <br>
 <a href="https://github.com/zenius/leetcode-problem-solution/blob/master/string-to-integer-atoi">Solution</a>
+
+## Palindrome Number
+Problem Link: https://www.leetcode.com/problems/palindrome-number <br>
+<a href="https://github.com/zenius/leetcode-problem-solution/blob/master/palindrome-number">Solution</a>
+
