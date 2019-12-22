@@ -1,0 +1,22 @@
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+const isPalindrome = function(x) {
+    // Negative numbers are not palindrome
+    // Number ending with 0 cannot be palindrome except 0 itself 
+    if (x < 0 || (x % 10 === 0 && x !== 0))
+        return false;
+
+    let reverse = 0;
+
+    // Run the loop until the halfway which is determined by the condition: x > reverse
+    while (x > reverse) {
+        reverse = reverse * 10 + x % 10;
+        x = Math.floor(x / 10);
+    }
+
+    // if reversed length is odd, get rid of the last digit as: Math.floor(reverse/10); 
+    // otherwise check if reversed number is equal to original number
+    return x === reverse || x === Math.floor(reverse / 10);
+};
